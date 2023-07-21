@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE-edge'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="style.css">
+<title>Calculate BMI</title>
+</head>
+<body>
+<div class="wrapper">  
+
+   <div class="heading">
+      <h1>
+        Calculate your Body Mass Index    
+      </h1>
+   </div>
+
+   <div class="wt-ip">
+      <input type="range" min="1" max="200" step="1" class="slider" wSlider>
+   </div>
+
+   <div class="wt-op">
+      <span>SET YOUR WEIGHT:</span>
+      <span w-data>    </span>
+      <span>kg</span> 
+   </div>
+
+    <div class="ht-ip">
+       <input type="range" min="1" max="250" step="1" class="slider" hSlider>
+    </div>
+
+    <div class="ht-op">
+      <span>SET YOUR HEIGHT:</span>
+      <span h-data></span>
+      <span>cm</span> 
+    </div> 
+
+
+    <div class="btn-container">
+        <button onclick="bmicalc()" class="btn">Calculate</button>
+    </div>
+
+    <div class="op">
+        <!-- <span>Your BMI : </span><span output class="answer"></span> -->
+        <span output class="answer"></span>
+    </div>
+
+    <div class="cmt">
+        <span comment></span>
+    </div>
+</div>   
+
+<script src="logic.js"></script>
+</body>
+</html>
